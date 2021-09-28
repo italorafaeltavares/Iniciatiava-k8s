@@ -1,0 +1,99 @@
+docker container run hello-world                                Criação de um container
+docker ls                                                       Lista containers ativos
+docker container ls -a                                          Lista todos containers 
+docker container run --name meucontainer hello-world            Criação de um container, nomeia
+docker container run --name meucontainer --rm  hello-world      Criação de um container, nomeia e remove
+docker container rm eeea17ac9634 c012a97803c7                   Remove containers 
+docker container run -it ubuntu /bin/bash                       Criação de um container e acessa o terminal do container
+docker container run nginx                                      Criação de um container 
+docker container run --name web -d  nginx                       Criação de um container em segundo plano
+docker container rm -f web                                      Remove containers em execução
+docker container run --name web -d -p 8080:80 nginx             Criação de um container em segundo plano com port bind
+
+# Criação de um container em segundo plano com port bind e inforamndo variaveis de ambiente:
+docker container run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongouser -e MONGO_INITDB_ROOT_PASSWORD=mongopwd mongo
+
+
+docker container inspect  eeea17ac9634                           Inspecionar container
+docker container exec -it eeea17ac9634                           Acesse o container
+docker container start    eeea17ac9634                           Inicia o container
+docker container restart  eeea17ac9634                           Reinicia o container
+docker container stop     eeea17ac9634                           Pàrar o container
+docker logs / docker container logs eeea17ac9634                 Verificar os logs do container
+docker container logs -f   eeea17ac9634                          Verificar os logs do container continuamente 
+docker container logs -n 5 eeea17ac9634                          Verificar os logs do container Ultimas 5 linhas
+docker container logs -t   eeea17ac9634                          Verificar os logs do container com time
+
+
+Docker Image/commit
+
+docker container run -it ubuntu /bin/bash
+docker container ls -a
+docker commit 7abdb87ef5c7 ubuntu-curl-commit
+docker container run -it ubuntu-curl-commit /bin/bash
+docker container run -it ubuntu-curl-commit curl https://www.google.com
+
+
+Docker Image/Docker file 
+
+nano Dockerfile
+cat Dockerfile
+
+FROM ubuntu
+RUN  apt-get update
+RUN  apt-get install curl --yes
+
+docker image build -t italorafaeltavares/ubuntu-curl .
+
+cat Dockerfile
+
+FROM ubuntu
+RUN  apt-get update && apt-get install curl --yes && apt-get install vim --yes
+
+docker image build -t italorafaeltavares/ubuntu-curl .
+
+root@HOME:/aula-01/01# docker image ls
+
+REPOSITORY                       TAG       IMAGE ID       CREATED          SIZE
+ussr/ubuntu-curl                 latest    b5a11a53bdba  55 seconds ago   181MB
+
+docker image ls
+docker image prune
+docker image rm b5a11a53bdba
+docker image inspect b5a11a53bdba
+docker image history ubuntu-curl
+docker image build -t
+
+
+docker image build -t namespace/conversao-temperatura:v1.0 .
+docker container run --name web -d -p 8080:8080 namespace/conversao-temperatura:v1.0
+docker container rm -f  web
+
+docker image build -t namespace/ubuntu-start:entry .
+docker container run  namespace/ubuntu-start:entry  teste
+
+docker image build -t namespace/ubuntu-arg:v1.0 --build-arg TAG="18.04" .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
