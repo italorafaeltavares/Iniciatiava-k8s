@@ -43,14 +43,14 @@ FROM ubuntu
 RUN  apt-get update
 RUN  apt-get install curl --yes
 
-docker image build -t italorafaeltavares/ubuntu-curl .
+docker image build -t iddockerhub/ubuntu-curl .
 
 cat Dockerfile
 
 FROM ubuntu
 RUN  apt-get update && apt-get install curl --yes && apt-get install vim --yes
 
-docker image build -t italorafaeltavares/ubuntu-curl .
+docker image build -t iddockerhub/ubuntu-curl .
 
 root@HOME:/aula-01/01# docker image ls
 
@@ -65,15 +65,19 @@ docker image history ubuntu-curl
 docker image build -t
 
 
-docker image build -t namespace/conversao-temperatura:v1.0 .
-docker container run --name web -d -p 8080:8080 namespace/conversao-temperatura:v1.0
+docker image build -t iddockerhub/conversao-temperatura:v1.0 .
+docker container run --name web -d -p 8080:8080 iddockerhub/conversao-temperatura:v1.0
 docker container rm -f  web
 
-docker image build -t namespace/ubuntu-start:entry .
-docker container run  namespace/ubuntu-start:entry  teste
+docker image build -t iddockerhub/ubuntu-start:entry .
+docker container run  iddockerhub/ubuntu-start:entry  teste
 
-docker image build -t namespace/ubuntu-arg:v1.0 --build-arg TAG="18.04" .
+docker image build -t iddockerhub/ubuntu-arg:v1.0 --build-arg TAG="18.04" .
 
+
+
+docker image build -t iddockerhub/conversao-peso  .
+docker container run --name web -d -p 8080:80 iddockerhub/conversao-peso
 
 
 

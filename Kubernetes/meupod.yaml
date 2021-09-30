@@ -1,0 +1,27 @@
+# Grupo de recursos utilizados do Kubernetes (apis) / kubectl api-resources
+apiVersion: v1
+# Tipo de objeto criado
+kind: Pod 
+# Metadatas deste objeto
+metadata:
+  name: meupod
+# Especificação do objeto
+spec:
+  containers:
+    - name: web
+      image: kubedevio/web-page:blue
+      ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: meusegundopod
+  labels:
+    app: web
+spec:
+  containers:
+    - name: web
+      image: kubedevio/web-page:blue
+      ports:
+        - containerPort: 80  

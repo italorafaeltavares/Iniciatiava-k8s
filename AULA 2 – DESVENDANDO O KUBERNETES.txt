@@ -1,0 +1,90 @@
+KIND 
+
+choco install kind  /WINDOWS
+
+Id CommandLine
+  -- -----------
+kind
+kind create cluster
+kind delete cluster --name meucluster
+kind get clusters
+kubectl get nodes
+
+cat ~/.kube/config
+
+
+kind delete cluster
+kind delete cluster --name meucluster
+
+kind create cluster --name meucluster --config cluster.yaml
+
+POD: Gerencia os Containers 
+
+# kubectl create -f meupod.yaml
+# kubectl describe pod meupod
+# kubectl port-forward pod/meupod 8080:8080  /  localhost:8080
+# kubectl delete pod meupod
+
+# kubectl apply -f meupod.yaml
+# kubectl get pod
+# kubectl get pod -l app=web
+
+REPLICASET: Escalabilidade e Resiliencia / Gerencia os pods
+
+# kubectl apply -f meureplicaset.yaml
+# kubectl get all
+# kubectl get replicaset
+# kubectl delete replicaset  meureplicaset
+
+
+DEPLOYMENT: Versionameto / Gerencia o replicaset 
+
+# kubectl apply -f meudeployment.yaml
+# kubectl get all
+# kubectl get deployment
+
+kubectl delete pod meudeployment-dc9f67696-65z95
+kubectl get pods
+
+
+kubectl apply -f meudeployment.yaml
+kubectl get pods
+kubectl get replicaset
+kubectl delete deployment meudeployment
+
+NAME                       DESIRED   CURRENT   READY   AGE
+meudeployment-77c5f4d98c   2         2         2       2m31s
+meudeployment-dc9f67696    0         0         0       14m  
+
+kubectl rollout history deployment meudeployment
+
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+
+kubectl rollout undo deployment meudeployment
+
+SERVICE:
+
+- CluterIP : Gera comunicação internamente no Kubernetes
+- NodePort : Gera comunicação externa de um pod atraeves de uma porta (30000/32767) do kubernetes 
+- LoadBalancer : Gera o loadbalance gerando ip pubico para acesso sem a escolha de porta 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
