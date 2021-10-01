@@ -5,9 +5,17 @@ Universo dos containers e Kubernetes
 ## Skills used
   
 <div style="display: inline_block"><br>
+  <img align="center" alt="Rafa-Git" height="30" width="40" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"/>
+  <img align="center" alt="Rafa-Github" height="30" width="40" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" />
+  <img align="center" alt="Rafa-Vstudio" height="30" width="40" src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg"/>
+  <img align="center" alt="Rafa-Terraform" height="30" width="40" src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" />
   <img align="center" alt="Rafa-Linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
   <img align="center" alt="Rafa-Docker" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
   <img align="center" alt="Rafa-Kubernetes" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" />
+  
+   
+  
+ 
 </div>
 
 ##
