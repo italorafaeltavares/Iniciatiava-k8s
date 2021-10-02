@@ -32,6 +32,7 @@ Universo dos containers e Kubernetes
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-Docker" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-k8s/blob/main/Docker/docker.png"/>
   <img align="center" alt="Rafa-K8s" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-k8s/blob/main/Kubernetes/k8s.png"/>
+  <img align="center" alt="Rafa-K8s" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-cicd/blob/main/Kubernetes/cicd.png"/>
   
 </div>
 
