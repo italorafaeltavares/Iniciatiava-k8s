@@ -20,13 +20,18 @@ Universo dos containers e Kubernetes
 
 ##
 
-- Primeiro desafio (conversao-peso) Criação da imagem utilizando o Multistage Build no Dockerfle realizado em 28/09/2021
+- Primeiro desafio: (conversao-peso) Criação da imagem utilizando o Multistage Build no Dockerfle realizado em 28/09/2021
 
- Documentação Microsoft: https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-5.0
+    Documentação Microsoft: https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-5.0
  
-- Segundo desafio (rotten-potatoes) Realizar o deploy do zero no Kubernetes, realizado em 30/09/2021
+- Segundo desafio: (rotten-potatoes) Realizar o deploy do zero no Kubernetes, realizado em 30/09/2021
 
-  fork: https://github.com/KubeDev/rotten-potatoes
+    fork: https://github.com/KubeDev/rotten-potatoes
+
+- Terceiro desafio: criar uma pipeline CI/CD com Github Actions para colocar suas aplicações em produção de forma automática.
+- O terraform foi utilizado para criar o cluster Kuberentes na DigitalOcean.
+
+
 
 
 
