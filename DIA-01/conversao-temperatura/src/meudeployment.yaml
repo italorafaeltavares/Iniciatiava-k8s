@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: italorafaeltavares/conversao-temperatura
+          image: iddockerhub/conversao-temperatura
           ports:
             - containerPort: 8080  
 
