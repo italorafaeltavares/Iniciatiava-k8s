@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: italorafaeltavares/conversao-peso
+          image: iddockerhub/conversao-peso
           ports:
             - containerPort: 80 
 
