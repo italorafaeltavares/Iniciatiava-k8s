@@ -10,10 +10,16 @@ Universo dos containers e Kubernetes
   <img align="center" alt="Rafa-Terraform" height="30" width="40" src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg" />
   <img align="center" alt="Rafa-Linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
   <img align="center" alt="Rafa-Docker" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
-  <img align="center" alt="Rafa-Kubernetes" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" />
-  
-     
+  <img align="center" alt="Rafa-Kubernetes" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" />       
 </div>
+
+## Badges acquired 
+<div style="display: inline_block"><br>
+  <img align="center" alt="Rafa-Docker" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-k8s/blob/main/Docker/docker.png"/>
+  <img align="center" alt="Rafa-K8s" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-k8s/blob/main/Kubernetes/k8s.png"/>
+  <img align="center" alt="Rafa-K8s" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-k8s/blob/main/Kubernetes/cicd.png"/>  
+</div>
+
 
 ##
 
@@ -28,13 +34,6 @@ Universo dos containers e Kubernetes
 - Terceiro desafio: criar uma pipeline CI/CD com Github Actions para colocar suas aplicações em produção de forma automática realizado em 01/10/2021
 - O terraform foi utilizado para criar o cluster Kuberentes na DigitalOcean.
 
-## Badges acquired 
-<div style="display: inline_block"><br>
-  <img align="center" alt="Rafa-Docker" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-k8s/blob/main/Docker/docker.png"/>
-  <img align="center" alt="Rafa-K8s" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-k8s/blob/main/Kubernetes/k8s.png"/>
-  <img align="center" alt="Rafa-K8s" height="50" width="50" src="https://github.com/italorafaeltavares/Iniciatiava-k8s/blob/main/Kubernetes/cicd.png"/>
-  
-</div>
 
 
 
